@@ -8,14 +8,14 @@ Welcome to the HOTHX databases workshop!
 
 ## Resources
 - [Slides](https://bit.ly/HOTH-X-Databases)
-- [Recording](TODO)
+- [Recording](https://drive.google.com/file/d/1H6BTtRo6AHHjwr7JwBqc5Kt86SxJjIkG/view?usp=share_link)
 
 ## Topics Covered
 - [What Databases Are](#what-are-databases)
 - [Types of Databases](#what-are-some-implementations-of-databases)
 - [Choosing a Database](#how-do-i-choose-a-database)
 - [Example Databases](#example-databases)
-- [Firebase Demo](#walkthrough:-required-tech-stack)
+- [Firebase Demo](#walkthrough-required-tech-stack)
 
 ## What are databases?
 A database is can be defined as structure for storing information in an highly accessible, persistent, scalable, secure, and reliable way. A simple way to visualize a database is as a table or excel spreadsheet.  
@@ -155,18 +155,19 @@ const [currAnimals, setCurrAnimals] = useState({});
 12) Add the following below the previous line of code (this function calls our database, converts it to an `Animal` object, and stores it in `currAnimals`). Here you'll have to replace
 ```JavaScript
 const fetchAnimals = async () => {
-    const docRef = doc(db, "Animals", "Lion")
+	const docRef = doc(db, "Animals", "Lion")
 					.withConverter(animalConverter);
-    const docSnap = await getDoc(docRef);
-    console.log(docSnap.data());
-    setCurrAnimals(docSnap.data());
-  };
+	const docSnap = await getDoc(docRef);
+	console.log(docSnap.data());
+	setCurrAnimals(docSnap.data());
+};
 ```
 13) Add the following lines between the `<header>` and `</header>` tags 
 ```JavaScript
 <div> My Animal: {currAnimals.animal} </div>
 <div> My Nickname: {currAnimals.nickname} </div>
 <div> My Age: {currAnimals.age} </div>
+<button onClick={fetchAnimals}>Fetch Animals...</button>
 ```
 14) Return to the terminal (or create a new one) and run `npm start`. Make sure your in the databasedemo project folder (or the command won't work).
 
@@ -189,9 +190,8 @@ const handleChange = (prop) => (event) => {
 ```JavaScript
 function addToDb(values) {
 	const ref = doc(db, "MyFirstCollection", newAnimal.animal)
-     		.withConverter(animalConverter);
-	setDoc(ref, new Animal(newAnimal.animal,
-    newAnimal.nickname, newAnimal.age));
+				.withConverter(animalConverter);
+	setDoc(ref, new Animal(newAnimal.animal, newAnimal.nickname, newAnimal.age));
 }
 ```
 4) Add the following at the bottom of the section between the `<header>` and `</header>` tags 
