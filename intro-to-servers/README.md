@@ -38,17 +38,20 @@ So, what exactly is a server?
 Maybe you have some web or mobile development experience or maybe you don't, but in some form or fashion, you've probably interacted with some sort of server. Whether that's been playing an online video game like Minecraft, watching YouTube, or simply eating at a sit-down restaurant, some sort of server was present. While one of these things is not in the same category, the general concept of a server stays the same.
 
 **A server is simply something that takes a request and provides some sort of response based on that request.**
+
 Calling something a "server" really is just semantics for describing the role, purpose, or behavior of what said thing does.
 
 ## Hardware and Software Servers :computer:
 In our case, a server can take a hardware or software form depending on the context.
 
 **In the context of hardware, a server is just a computer that runs server software.** 
+
 These computers can take on more robust configurations, but at their core, they are just a more powerful version of your laptop. 
 In fact, your laptop or desktop can even function as a server, which is what we will be using during the development of our demo.
 If you are interested in the hardware, there are videos all over the internet of people taking them apart and showing exactly what they are, such as [this one](https://www.youtube.com/watch?v=DS1FcT93Qy8&vl=en) by LTT.
 
 **In the context of software, a server is just a program.**
+
 What makes the program a server program is that it will supply you with some response or data when a client makes a request to the "server" program.
 This software server will most likely include an API and interact with other resources like a database, but at its core, it is just some code.
 
@@ -56,12 +59,16 @@ This software server will most likely include an API and interact with other res
 (oh, the irony)
 
 So now, what is a client?
+
 **A client is a program or device that makes a request to a server for a specific resource or service.**
 
 Suppose you wanted to watch [this](https://youtu.be/FKluZLl5hFA) video.
 In this case, the software client that you would be using is most likely a web browser like Google Chrome, which leverages HTML, CSS, and JavaScript to bring you the UI/UX.
+
 After clicking the YouTube video, your client would make a request to the Youtube server asking for a webpage associated with the URL.
+
 The Youtube server would then send back a response that includes the resources necessary to render the webpage in the browser.
+
 Your browser would then render the YouTube webpage with the video, and any additional requests to the YouTube server, like pausing the video, would function similarly.
 
 What was just described is very much a simplification of how an interaction with the YouTube servers would work.
@@ -70,13 +77,14 @@ However, this is what a client and server interaction looks like from a software
 In our case, we will simply host our server program on the same computer that we host the client program on.
 
 As for some terminology, the **client** program is usually referred to as **a part of the front end**, and the **server** program is usually referred to as **a part of the backend**. 
+
 Just as an aside, the backend also encompasses other things like a database and API.
 
 ## Client and Server Communication (HTTP) :email:
 
 Now that we understand what clients and servers are, we need to know how they communicate.
-There are many data transfer protocols like SMTP for emails and FTP for high-speed file transfers, and in our case, the Hypertext Transfer Protocol or HTTP serves as the foundation for any data exchange on the Web.
-It works as a client-server protocol, which means that the client initiates requests to the web server as an HTTP request, which then sends back an HTTP response.
+There are many data transfer protocols like SMTP for emails and FTP for high-speed file transfers, and in our case, the Hypertext Transfer Protocol or HTTP serves for data exchange on the Web.
+It works as a client-server protocol, which means that the client (usually a web browser) initiates requests to the web server as an HTTP request, which then sends back an HTTP response.
 An API (Application Programming Interface) is the software program and part of the server that facilitates these requests and responses between a client and a server.
 During the demo, we will write a software server, including its API.
 
@@ -100,10 +108,10 @@ The request line takes the following form:
 
 There are several HTTP methods- some of the most common ones being GET, POST, PUT, and DELETE.
 Each one has a different function and describes what the request will do.
-`GET` is used to retrieve data.
-`POST` is used to send something to the server.
-`PUT` is generally used to update something on the server, but has some ambiguity with POST.
-`DELETE` is used to delete something on the server.
+- `GET` is used to retrieve data.
+- `POST` is used to send something to the server.
+- `PUT` is generally used to update something on the server, but has some ambiguity with POST.
+- `DELETE` is used to delete something on the server.
 
 The next part of the request line is the endpoint, which is also known as the URI (Uniform Resource Identifier).
 It is the path to the place where you want to perform a request on the server.
@@ -112,15 +120,15 @@ If you are curious:
 
 * A URI is a string of characters that identifies something on the Internet. A URI can be used to identify any kind of Internet resource, including webpages, files, images, databases, etc.
     * URIs:
-        mailto:hoshino.nonomi@example.com (identifies an email address)
-        tel:+1-202-456-1111 (identifies a phone number)
-        urn:isbn:9780811204811 (identifies a book using its ISBN)
+        - mailto:hoshino.nonomi@example.com (identifies an email address)
+        - tel:+1-202-456-1111 (identifies a phone number)
+        - urn:isbn:9780811204811 (identifies a book using its ISBN)
 
 * A URL, on the other hand, is a specific type of URI that includes the network location of a resource and the protocol to be used to access it. A URL provides the specific location of a resource on the Internet and the protocol to be used to access it.
     * URLs:
-        https://www.example.com/index.html (represents the address of a webpage)
-        ftp://ftp.example.com/data/file.txt (represents the location of a file on an FTP server)
-        https://api.example.com/users/12345 (represents an API endpoint for accessing user data with a specific ID)
+        - https://www.hoshino.com/index.html (represents the address of a webpage)
+        - ftp://ftp.valgrind.com/data/file.txt (represents the location of a file on an FTP server)
+        - https://api.bluearch.com/users/12345 (represents an API endpoint for accessing user data with a specific ID)
 
 TL;DR all URLs are URIs, but not all URIs are URLs.
 Endpoints are also just a type of URI. 
@@ -162,9 +170,9 @@ The status line takes the following form:
 The `HTTP-PROTOCOL`, again, is the version of HTTP used.
 The status code can be numerous different codes, which tell the client if the request was successful, if there was an error, or if there is some action that needs to be taken.
 The three-digit codes follow the format:
-`2xx`: successful
-`4xx`: unsuccessful + client-side error
-`5xx`: unsuccessful + server-side error
+- `2xx`: successful
+- `4xx`: unsuccessful + client-side error
+- `5xx`: unsuccessful + server-side error
 
 (As an aside, here is a [wonderful website](https://http.cat/) that'll let you know what different response codes mean.)
 
@@ -212,7 +220,9 @@ Body Example (JSON):
 ## JSON :page_facing_up:
 
 When we are writing the API to handle these requests and responses on our server, we will mostly care about the body of these requests and responses. 
+
 The body can be many things like an image or webpage, but we usually handle data using **JSON (JavaScript object notation)**, which **acts as a standardized way to structure data.**
+
 While there are other alternatives to JSON like YAML, we are using Node.js for our server environment, and thus want our data to integrate well with JavaScript.
 
 ```JSON
