@@ -13,14 +13,14 @@
 
 ## Overview :white_check_mark:
 
-- [Introduction](#introduction)
-- [Hardware and Software Servers](#hardware-and-software-servers)
-- [Clients vs. Servers](#clients-vs-servers)
-- [Client and Server Communication (HTTP)](#client-and-server-communication-http)
+- [Introduction](#introduction-triangular_flag_on_post)
+- [Hardware and Software Servers](#hardware-and-software-servers-computer)
+- [Clients vs. Servers](#clients-vs-servers-nerd_face)
+- [Client and Server Communication (HTTP)](#client-and-server-communication-http-email)
     - [HTTP Requests](#http-requests)
     - [HTTP Responses](#http-responses)
-- [JSON](#json)
-- [DEMO](#demo)
+- [JSON](#json-page_facing_up)
+- [DEMO](#demo-file_folder)
     - [Setting Up the Server Environment](#setting-up-the-server-environment)
     - [Server Creation](#server-creation)
         - [Expanding the API - User Database Setup](#expanding-the-api---user-database-setup)
@@ -311,7 +311,7 @@ Now, if you browse to the URL `http://localhost:3000/`, you should see "Hello, w
 Success!
 You have just set up a basic web server using Express!
 
-#### Expanding the API - User Database Setup
+### Expanding the API - User Database Setup
 To make our server more robust, we can add more routes that do different things.
 These routes are the API of our server and allow us to make varying HTTP requests to get responses from our server.
 For the sake of demonstration, I will run through creating a simulated database and using a GET, POST, and DELETE request to fetch and manipulate data.
@@ -355,7 +355,7 @@ Now, when we browse to `http://localhost:3000/api/users`, we should see our simu
 {"users":[{"id":1,"name":"Arisu"},{"id":2,"name":"Ako"},{"id":3,"name":"Hina"}]}
 ```
 
-#### Expanding the API - User Creation
+### Expanding the API - User Creation
 To demonstrate more HTTP requests, we will write two more endpoints: one to create a new user, and one to delete a user.
 
 To create a new user, we will need a POST request, as we are adding something to our database.
@@ -385,7 +385,7 @@ app.post('/api/users', (req, res) => {
 ```
 Note: The HTTP response status code `201` is used to indicate successful creation.
 
-#### Testing Routes/Endpoints with Postman
+### Testing Routes/Endpoints with Postman
 As our POST request requires a request body to create a user, we won't be able to test it with just our browser URL.
 A useful tool for testing APIs and their HTTP requests/responses is [Postman](https://www.postman.com/)!
 After either setting up the Postman desktop application or setting up Postman to work in the browser, we will want to go to our workspace.
@@ -419,7 +419,7 @@ It is highly suggested to tinker with Postman and get used to testing HTTP reque
 It is a very useful tool for development!
 Now, on to deleting users:
 
-#### Expanding the API - User Deletion
+### Expanding the API - User Deletion
 Our delete user endpoint will act very similarly, however, our endpoint will utilize a parameter.
 Parameters are like variables that vary based on the URL route.
 Along with this, we also check if the user id specified to delete a user is valid and throw a `404` status code and error if it is not.
