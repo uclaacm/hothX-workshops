@@ -262,8 +262,8 @@ You should see a version number:
 v18.13.0
 ```
 Feel free to look at some tooling documentation:
-[Familiarize yourself with VSCode](https://code.visualstudio.com/docs/setup/setup-overview)
-[Familiarize yourself with Postman](https://learning.postman.com/docs/getting-started/introduction/)
+- [VSCode](https://code.visualstudio.com/docs/setup/setup-overview)
+- [Postman](https://learning.postman.com/docs/getting-started/introduction/)
 
 The source code is also in this repository, so please reference it!
 
