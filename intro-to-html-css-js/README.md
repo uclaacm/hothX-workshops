@@ -69,6 +69,16 @@ A list tag is a tag used to create lists of items. There are two main types of l
 A button tag is used to create buttons on a web page. It is represented by the `<button>` tag.
 - For now, nothing will happen when the user clicks the button. To make the button interactive, we need to use more than just HTML. One way to achieve this is by executing a JavaScript function when the button is clicked using the 'onClick' attribute. We will cover this in more detail in the JavaScript section of this workshop.
 
+### Div
+```
+<div>
+  <p>I'm Anya! I'm 6, and this is where you can read everything about me. 𓁹‿𓁹</p>
+  <img src="https://static.tvtropes.org/pmwiki/pub/images/anya_happy.png" alt="anya_happy", height="200px"/>
+</div>
+```
+
+The `<div>` tag defines a division or a section in an HTML document. It is used as a container for HTML elements.
+
 # CSS
 CSS (Cascading Style Sheets) is a language used to style and format web pages. With CSS, we can control the font, color, size, and spacing of text, as well as the layout and positioning of elements on a web page. 
 
