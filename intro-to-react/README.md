@@ -1,5 +1,5 @@
 # HOTH X - Intro to React
-**Teacher**: Brooke jiang
+**Teacher**: Brooke Jiang
 
 Hi! Weicome to the Intro to React workshop. If you're not yet familiar with HTML/CSS/Javascript, make sure you watch those relevant workshops first!
 
