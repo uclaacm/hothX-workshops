@@ -7,7 +7,7 @@ The following workshops are available this year!
 - [Web Development: React]()
 - [Mobile Development: React Native]()
 - [Web API's]()
-- [Intro to Backend: Servers]()
+- [Intro to Backend: Servers](intro-to-servers/)
 - [Intro to Backend: Databases](intro-to-databases/README.md)
 - [Intro to Version Control: Git]() 
 - [Intro to Game Development: Unity]()
