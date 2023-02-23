@@ -1,0 +1,23 @@
+.small-flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF9F6;
+    color:#333333;
+    margin: 26px;
+    padding-left: 24px;
+    border-radius: 20px;
+}
+
+.checkbox{
+    width: 36px;
+    height: 36px;
+    padding: 24px;
+}
+
+.grocery-name{
+    margin-bottom: 0px;
+}
+
+.grocery-notes{
+    margin-top: 5px;
+}
