@@ -9,7 +9,7 @@
 **Resources**:
 
 - [Slides](https://docs.google.com/presentation/d/1RRLdpQPd8cEvC-9tqNKD9qUO08CcmGYJo30rTwJiQkU/edit?usp=sharing)
-- [Workshop Recording](https://www.youtube.com/watch?v=dQw4w9WgXcQ) EDIT LINK
+- [Workshop Recording](https://drive.google.com/file/d/1StnD2qdbx-CFr_29UBXc9lnCiipWL79S/view?usp=share_link)
 
 ## Overview :white_check_mark:
 
@@ -252,6 +252,8 @@ What you will need to follow along with the demo:
 - [VSCode](https://code.visualstudio.com/Download) (or a text editor of your choice)
 - [Node.js](https://nodejs.org/en/download/) (LTS)
 - [Postman](https://www.postman.com/downloads/) (can be used in browser)
+- [Express](https://expressjs.com/en/starter/installing.html)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 NOTE: After installing Node, open the terminal and type:
 ```
