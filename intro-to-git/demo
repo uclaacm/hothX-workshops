@@ -1,0 +1,41 @@
+hello! welcome to the demo code for the git workshop. it's time to git gud!! >:3c
+
+NOTE: this demo will ask you to type some code in your terminal. the code you need to write will start with a `$`, but you DO NOT need to include it. so if it says to type `$ all star`, the only thing you will be typing is `all star`. let's get started!
+
+please open this file in a code editor of your choice. if you have not made a github (https://github.com) account already, please do so now. 
+
+to start off, let's build a repository with this file. create a github repository by opening this page: https://github.com/new. set the repository to public and do not touch the other settings.
+
+now, i assume this text file is somewhere in your downloads folder. move it into a respectable folder of your choice. then in the terminal window, type `$ git init`. this will create a local repository on your personal device with this folder. 
+
+create a commit in this repository by adding your changes with `$ git add .` and committing with `$ git commit -m “[message]”`. bind and sync the github repository to your local repository with these three commands: `$ git remote add origin [GitHub repo url]`, `$ git branch -M main`, `$ git push -u origin main`. 
+
+you're done! check github to make sure you see this file on your repository. 
+
+you're already on the main branch, but let's pretend you want to move to the main branch. type `$ git checkout main` (it'll tell you you're already on main). if you use vscode, you can also see what branch you're on on the lower left corner. and if there are any modifications, there will be an asterick next to the branch name.
+
+since this is a practice repository and you aren't sharing it with anyone, no one has made any changes for you to pull yet. but let's (yet again) pretend someone did make some changes. you would pull by typing `$ git pull`. your repository is already up to date; great job!
+
+now let's make some changes to this file. create and switch onto a new branch by typing `$ git checkout -b “[branch name]”`. replace the text below with text of your own choosing:
+
+TEXT ->
+
+according to all known laws of aviation, there is no way a bee should be able to fly. its wings are too small to get its fat little body off the ground. the bee, of course, flies anyway because bees don't care what humans think is impossible. yellow, black. yellow, black. yellow, black. yellow, black. ooh, black and yellow! let's shake it up a little. barry! breakfast is ready! ooming! hang on a second.
+
+<- TEXT
+
+save your file. add your changes with the command `$ git add .` again. let's commit your wonderful changes by typing `$ git commit -m "[message]"`. the message is usually a short description of what changes you made. push your branch onto the remote repository by typing `$ git push -u origin [branch name]`. 
+
+now let's do a little bit of roleplaying. pretend you're someone who's also making changes to the same repository. except this time, you're editing the main branch. go back to the main branch by typing `$ git checkout main`. then in the same section of text you just edited, add some more text. add, commit, and push your changes again (`$ git add .`, `$ git commit -m "[message]"`, `$ git push`).
+
+you'll see a lot of text on the terminal, but the most important is the part is the part in your previous push where it tells you to "create a pull request for 'branch name' on github by visiting: [link]. if you guessed that you need to copy-paste that link into your web browser, you're right! 
+
+in the "write" section, you'll usually write a more detailed description of the changes you made. once you're done, create a pull request. check to see if there are any merge conflicts. oh no! there is one. github has a button with the text "resolve merge conflict." you can choose to resolve the conflict through github or whatever code editor you're using. for simplicity's sake, we'll use github. press the button and look at the editing window open. 
+
+choose to edit the text however you see fit to resolve the conflict. there will be conflict markers that look like arrows with the names of the branch name you chose as well as main. make sure to delete the conflict markers and the branch names! once you're done, click "mark as resolved". you can now click "commit merge" then "merge pull request"!
+
+congrats! you've successfully merged your branch and main branch together and your changes are now live on your github repository. to see the changes in your own local repository, make sure to `git pull` on the main branch.
+
+hopefully this demo walkthrough was helpful in guiding you to understanding how git works and the many git commands you have to use. if you have any further questions, you can read the readme or ask any officer to help you further!
+
+thank you for reading~! >__<

@@ -9,7 +9,7 @@ The following workshops are available this year!
 - [Web API's](intro-to-apis/README.md)
 - [Intro to Backend: Servers](intro-to-servers/)
 - [Intro to Backend: Databases](intro-to-databases/README.md)
-- [Intro to Version Control: Git]() 
+- [Intro to Version Control: Git](intro-to-git/README.md) 
 - [Intro to Game Development: Unity]()
 - [Intro to Machine Learning]()
 - [Intro to UI/UX]()
