@@ -1,3 +1,20 @@
+# HOTHX Intro to Web APIs
+**Date:** February 5, 2023
+**Teacher:** Abigail Tran
+Welcome to the HOTHX Intro to Web APIs workshop * ੈ✩‧₊˚  In this workshop, we will learn all about using Web APIs to integrate existing software systems (like Twitter, Venmo, Spotify, Google Maps) within your own project🧑‍💻💻📲 
+
+##Resources
+- [slides](https://docs.google.com/presentation/d/1iQU02GAt75Y2JhRN6iniuJFAt_tKBy1xE2whg-1DJs0/edit?usp=sharing)
+- [workshop recording]()
+
+#Topics Covered
+- [APIs]()
+- [Servers and Clients]()
+- [HTTP]()
+- [Spotify Walkthrough]()
+
+#What is an API?
+- API stands for **A***plication **P**rogramming **I**nterface. This may sound complicated, but they are essentially just a way for two computers- a client and 
 ```class ProfilePage extends React.Component { //making a copmponent and this is what will be shown on the localhost
     constructor(props) {
         super(props);
