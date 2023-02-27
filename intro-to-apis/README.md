@@ -16,7 +16,7 @@ In this workshop, we will learn all about using Web APIs to integrate existing s
 - [Servers and Clients](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#what-is-a-server-and-a-client-and-how-do-they-interact)
 - [HTTP](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#http)
 - [FullStack Example with Twitter API](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#quick-little-fullstack-example-with-twitterbot-api)
-- [Spotify API Walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-apis-walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-api-walkthrough)
+- [Spotify API Walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-api-walkthrough)
 
 ## What is an API?
 API stands for **A**plication **P**rogramming **I**nterface. This may sound complicated, but they really they just a way for two computers- a client and a server** to communicate. Some examples of APIs you may have encountered before are Venmo, Google Maps, and Twitterbots. Venmo payment is done through to ensure that the end application can only do what it needs to accomplish without being exposed to sensitive data or gaining access to unwelcome privileges. In this sense, APIs are kind of like a black box, or an object that produces useful information without revealing anything about its internal workings
@@ -104,7 +104,9 @@ Some cool examples of Spotify APIs are [Receiptify](https://receiptify.herokuapp
 
 We cannot go into Spotify's code, but a lot of functions are in Spotify's public API. HWe can look at their API, see there is a method that corresponds to what we want, and use it without accessing all their data. We can only access stuff like a user’s artists, songs, etc, but not their payment info for example. Spotify does not want you to access their data: this is the whole point of an API. This is a win-win because this protects Spotify's data and also gives you a doorway into methods and how you want to interact with servers. 
 
-Here is a [link to intructions on how to set up for a Spotify API.](https://developer.spotify.com/documentation/web-api/quick-start/) I also believe that the [Intro to Backend: Servers workshop]() may touch upon setting up a server.
+Here is a [link to intructions on how to set up for a Spotify API.](https://developer.spotify.com/documentation/web-api/quick-start/) 
+
+I also believe that the [Intro to Backend: Servers workshop](https://github.com/uclaacm/hothX-workshops/tree/main/intro-to-servers) may touch upon setting up a server.
 
 Here is a [link to some Spotify functions may use to access a user's data, edit a user's playlist, edit a user's library, etc](https://github.com/JMPerez/spotify-web-api-js)
 
@@ -124,7 +126,7 @@ Below is my my code collecting a user's top 20 artists, including explanations! 
     componentDidMount() {
         const token = getToken(); //getToken is an api call
         this.state.spotify.setAccessToken(token); // tokens are proof of authentiation,common in apps that you log in, you get a token when user logs in and you basically give it to server (spotify) and server gives data back 
-        this.state.spotify.getMe().then( //.then is async,, ensures 21 and 22 go after getme() function fulfills promise
+        this.state.spotify.getMe().then( //.then is async,, ensures (me) and (error) go after getme() function fulfills promise
             (me) => this.setState({ displayName: me.display_name }), //expecting an argument called me,, setting display name state to whatever display name is in the me object
             (error) => console.log("Error loading profile data: ", error) //if there is an error that exists, print th eerror to the console so you can see what it is and debug
         );
@@ -138,7 +140,7 @@ Below is my my code collecting a user's top 20 artists, including explanations! 
                     let artists = []; //create empty array of artists, so that we can hold artists as we iterate the artists that are returned
                     artistsData.items.forEach((artist) =>{ //loops through every single item (every artist) in artistData.items
                         console.log(artist); //prints to the website
-                        artists.push(artist.name) //add artist name to empty array artists we created in 31
+                        artists.push(artist.name) //add artist name to empty array artists we created earlier
                     }
                     ); //we are out of the loop but we are still in the .then function
 
