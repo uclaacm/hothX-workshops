@@ -14,9 +14,9 @@ In this workshop, we will learn all about using Web APIs to integrate existing s
 ## Topics Covered
 - [APIs](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#what-is-an-api)
 - [Servers and Clients](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#what-even-is-a-server-or-a-client-and-how-do-they-interact)
-- [HTTP](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#http-p)
+- [HTTP](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#http)
 - [FullStack Example with Twitter API](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#quick-little-fullstack-example-with-twitterbot-api)
-- [Spotify Walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-apis-walkthrough)
+- [Spotify Walkthrough]([https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-apis-walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-api-walkthrough))
 
 ## What is an API?
 API stands for **A**plication **P**rogramming **I**nterface. This may sound complicated, but they really they just a way for two computers- a client and a server** to communicate. Some examples of APIs you may have encountered before are Venmo, Google Maps, and Twitterbots. Venmo payment is done through to ensure that the end application can only do what it needs to accomplish without being exposed to sensitive data or gaining access to unwelcome privileges. In this sense, APIs are kind of like a black box, or an object that produces useful information without revealing anything about its internal workings
@@ -36,7 +36,7 @@ The benefit: you can enjoy the yummy products of the restaurant's work without h
 <img width="518" alt="Screen Shot 2023-02-27 at 1 20 49 PM" src="https://user-images.githubusercontent.com/108372342/221688245-145c19c6-f6fe-484a-9259-d43c457c8b26.png">
 
 
-## HTTP :P
+## HTTP 
 HTTP stands for Hyper Text Transfer Protocol. It is the primary way we communicate over the World Wide Web (you may have seen http:// in urls). HTTP's fixed format makes it easier for servers to parse through a client's request.
 
 <img width="396" alt="Screen Shot 2023-02-27 at 1 30 58 PM" src="https://user-images.githubusercontent.com/108372342/221690143-75668c2a-97a4-48d4-a65b-d1d4147b621b.png">
@@ -108,7 +108,7 @@ Here is a [link to intructions on how to set up for a Spotify API.](https://deve
 
 Here is a [link to some Spotify functions may use to access a user's data, edit a user's playlist, edit a user's library, etc](https://github.com/JMPerez/spotify-web-api-js)
 
-Below is my my code collecting a user's top 20 artists, including explanations! In this code, I use the Spotify API calls getMe and getMyTopArtists. I also deal with **tokens** which are prevalent in apps that require a user to log in. Tokens are proof of authentication. You get a token when a user logs in and you give the top to the server, Spotify, in exchange for data. This makes sense, because Spotify, cannot just give out anybody's data, they need the user to show that they agree by logging in. 
+Below is my my code collecting a user's top 20 artists, including explanations! In this code, I use the Spotify API calls **getMe** and **getMyTopArtists**. I also deal with **tokens** which are prevalent in apps that require a user to log in. Tokens are proof of authentication. You get a token when a user logs in and you give the top to the server, Spotify, in exchange for data. This makes sense, because Spotify, cannot just give out anybody's data, they need the user to show that they agree by logging in. 
 
 ```class ProfilePage extends React.Component { //making a copmponent and this is what will be shown on the localhost
     constructor(props) {
