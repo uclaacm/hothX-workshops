@@ -55,7 +55,7 @@ HTTP stands for Hyper Text Transfer Protocol. It is the primary way we communica
 - **DELETE:** delete data
     - delete a Tweet
     - /feed/delete/:_id
-<img width="158" alt="Screen Shot 2023-02-27 at 1 31 35 PM" src="https://user-images.githubusercontent.com/108372342/221690258-5ba5fdd6-a980-4d84-a451-4e711981b848.png">
+<img width="350" alt="Screen Shot 2023-02-27 at 1 31 35 PM" src="https://user-images.githubusercontent.com/108372342/221690258-5ba5fdd6-a980-4d84-a451-4e711981b848.png">
 
 
 
