@@ -1,11 +1,11 @@
-# HOTHX Intro to Web APIs
-**Date:** February 5, 2023
-**Teacher:** Abigail Tran
+# HOTHX Intro to Web APIs 
+**Date:** February 5, 2023 \\ 
+**Teacher:** Abigail Tran \\ 
 Welcome to the HOTHX Intro to Web APIs workshop * ੈ✩‧₊˚  In this workshop, we will learn all about using Web APIs to integrate existing software systems (like Twitter, Venmo, Spotify, Google Maps) within your own project🧑‍💻💻📲 
 
 ## Resources
 - [slides](https://docs.google.com/presentation/d/1iQU02GAt75Y2JhRN6iniuJFAt_tKBy1xE2whg-1DJs0/edit?usp=sharing)
-- [workshop recording]()
+- [workshop recording](https://drive.google.com/file/d/1lpIY8jj-EQFtm9-cWhawWKHvvBgjoBer/view?usp=share_link)
 
 ## Topics Covered
 - [APIs]()
