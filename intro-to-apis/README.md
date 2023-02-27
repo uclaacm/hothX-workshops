@@ -27,7 +27,7 @@ Servers are just like any regular old computer. The only difference is that they
 
 Here, let's use a restaurant analogy to better explain this: Clients are like the customers ordering. Just like how a customer can request a glass of water or an order of sushi, a client can request some function to be performed or data to be processed and returned. The request goes to the kitchen which acts as the **server** (not to be confused with waiter). Now how does this request go to the kitchen? The waiter communicates the request to the kitchen and also brings the food from the kitchen similar to an **API**, which acts as a middle man between a client and a server. 
 
-The benefit: you can ask for food and you don’t have to know how to make it yourself. This way the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use HTTP.
+The benefit: you can enjoy the yummy products of the restaurant's work without having to know how to make it yourself. This way, the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use HTTP.
 
 ## HTTP :P
 HTTP stands for Hy
