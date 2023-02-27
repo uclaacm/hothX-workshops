@@ -27,13 +27,38 @@ Servers are just like any regular old computer. The only difference is that they
 
 Here, let's use a restaurant analogy to better explain this: Clients are like the customers ordering. Just like how a customer can request a glass of water or an order of sushi, a client can request some function to be performed or data to be processed and returned. The request goes to the kitchen which acts as the **server** (not to be confused with waiter). Now how does this request go to the kitchen? The waiter communicates the request to the kitchen and also brings the food from the kitchen similar to an **API**, which acts as a middle man between a client and a server. 
 
-The benefit: you can enjoy the yummy products of the restaurant's work without having to know how to make it yourself. This way, the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use 
+The benefit: you can enjoy the yummy products of the restaurant's work without having to know how to make it yourself. This way, the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use HTTP.
 
-HTTP.<img width="518" alt="Screen Shot 2023-02-27 at 1 20 49 PM" src="https://user-images.githubusercontent.com/108372342/221688245-145c19c6-f6fe-484a-9259-d43c457c8b26.png">
+<img width="518" alt="Screen Shot 2023-02-27 at 1 20 49 PM" src="https://user-images.githubusercontent.com/108372342/221688245-145c19c6-f6fe-484a-9259-d43c457c8b26.png">
 
 
 ## HTTP :P
-HTTP stands for Hyper
+HTTP stands for Hyper Text Transfer Protocol. It is the primary way we communicate over the World Wide Web (you may have seen http:// in urls). HTTP's fixed format makes it easier for servers to parse through a client's request.<img width="396" alt="Screen Shot 2023-02-27 at 1 30 58 PM" src="https://user-images.githubusercontent.com/108372342/221690143-75668c2a-97a4-48d4-a65b-d1d4147b621b.png">
+
+
+
+
+**Methods** are requests you can make through HTTP. The primary HTTP methods are **GET, POST, PUT, DELETE** I will be illustrating this methods using a TwitterBot API as an example. 
+
+- **GET:** read data
+    - get all Tweets
+    - /feed
+
+- **POST:** insert data
+    - create a new Tweet
+    - /feed/new
+
+- **PUT:** update date or insert if a new id
+    - edit a Tweet or like a Tweet
+    - /feed/edit/:_id or /feed/like/:_id
+
+- **DELETE:** delete data
+    - delete a Tweet
+    - /feed/delete/:_id
+<img width="158" alt="Screen Shot 2023-02-27 at 1 31 35 PM" src="https://user-images.githubusercontent.com/108372342/221690258-5ba5fdd6-a980-4d84-a451-4e711981b848.png">
+
+
+
 
 ```class ProfilePage extends React.Component { //making a copmponent and this is what will be shown on the localhost
     constructor(props) {
