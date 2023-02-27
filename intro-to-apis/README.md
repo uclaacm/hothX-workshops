@@ -18,7 +18,7 @@ In this workshop, we will learn all about using Web APIs to integrate existing s
 - [Spotify Walkthrough]()
 
 ## What is an API?
-- API stands for **A***plication **P**rogramming **I**nterface. This may sound complicated, but they are essentially just a way for two computers- a client and 
+- API stands for ==A==plication ==P==rogramming ==I==nterface. This may sound complicated, but they are essentially just a way for two computers- a client and 
 ```class ProfilePage extends React.Component { //making a copmponent and this is what will be shown on the localhost
     constructor(props) {
         super(props);
