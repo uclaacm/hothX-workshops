@@ -1,7 +1,7 @@
 # HOTHX Intro to Web APIs 
 **Date:** February 5, 2023 
 
-**Teacher:** Abigail Tran 
+**Teacher:** [Abigail Tran](https://github.com/abigailtrann) 
 
 Welcome to the HOTHX Intro to Web APIs workshop * ੈ✩‧₊˚  
 
@@ -16,7 +16,7 @@ In this workshop, we will learn all about using Web APIs to integrate existing s
 - [Servers and Clients]()
 - [HTTP]()
 - [Spotify Walkthrough]()
-- [Back to APIs] ()
+- [Back to APIs]()
 
 ## What is an API?
 API stands for **A**plication **P**rogramming **I**nterface. This may sound complicated, but they really they just a way for two computers- a client and a server** to communicate. Some examples of APIs you may have encountered before are Venmo, Google Maps, and Twitterbots. Venmo payment is done through to ensure that the end application can only do what it needs to accomplish without being exposed to sensitive data or gaining access to unwelcome privileges
@@ -27,10 +27,13 @@ Servers are just like any regular old computer. The only difference is that they
 
 Here, let's use a restaurant analogy to better explain this: Clients are like the customers ordering. Just like how a customer can request a glass of water or an order of sushi, a client can request some function to be performed or data to be processed and returned. The request goes to the kitchen which acts as the **server** (not to be confused with waiter). Now how does this request go to the kitchen? The waiter communicates the request to the kitchen and also brings the food from the kitchen similar to an **API**, which acts as a middle man between a client and a server. 
 
-The benefit: you can enjoy the yummy products of the restaurant's work without having to know how to make it yourself. This way, the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use HTTP.
+The benefit: you can enjoy the yummy products of the restaurant's work without having to know how to make it yourself. This way, the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use 
+
+HTTP.<img width="518" alt="Screen Shot 2023-02-27 at 1 20 49 PM" src="https://user-images.githubusercontent.com/108372342/221688245-145c19c6-f6fe-484a-9259-d43c457c8b26.png">
+
 
 ## HTTP :P
-HTTP stands for Hy
+HTTP stands for Hyper
 
 ```class ProfilePage extends React.Component { //making a copmponent and this is what will be shown on the localhost
     constructor(props) {
