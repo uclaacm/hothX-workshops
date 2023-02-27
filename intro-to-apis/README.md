@@ -8,17 +8,26 @@ Welcome to the HOTHX Intro to Web APIs workshop * ੈ✩‧₊˚
 In this workshop, we will learn all about using Web APIs to integrate existing software systems (like Twitter, Venmo, Spotify, Google Maps) within our own project🧑‍💻💻📲 
 
 ## Resources
-- [slides](https://docs.google.com/presentation/d/1iQU02GAt75Y2JhRN6iniuJFAt_tKBy1xE2whg-1DJs0/edit?usp=sharing)
-- [workshop recording](https://drive.google.com/file/d/1lpIY8jj-EQFtm9-cWhawWKHvvBgjoBer/view?usp=share_link)
+- [Slides](https://docs.google.com/presentation/d/1iQU02GAt75Y2JhRN6iniuJFAt_tKBy1xE2whg-1DJs0/edit?usp=sharing)
+- [Workshop recording](https://drive.google.com/file/d/1lpIY8jj-EQFtm9-cWhawWKHvvBgjoBer/view?usp=share_link)
 
 ## Topics Covered
 - [APIs]()
 - [Servers and Clients]()
 - [HTTP]()
 - [Spotify Walkthrough]()
+- [Back to APIs] ()
 
 ## What is an API?
-- API stands for ==A==plication ==P==rogramming ==I==nterface. This may sound complicated, but they are essentially just a way for two computers- a client and 
+API stands for **A**plication **P**rogramming **I**nterface. This may sound complicated, but they really they just a way for two computers- a client and a server** to communicate. Some examples of APIs you may have encountered before are Venmo, Google Maps, and Twitterbots. Venmo payment is done through to ensure that the end application can only do what it needs to accomplish without being exposed to sensitive data or gaining access to unwelcome privileges
+APIs.
+
+## What even is a Server? or a Client? And how do they Interact????!!
+Servers are just like any regular old computer. The only difference is that they have the task of listening and responding to requests from other computers called **clients.** Here, let's use a restaurant analogy to better explain this: Clients are like the customers ordering. Just like how a customer can request a glass of water or an order of sushi, a client can request some function to be performed or data to be processed and returned. The request goes to the kitchen which acts as the **server** (not to be confused with waiter). Now how does this request go to the kitchen? The waiter communicates the request to the kitchen and also brings the food from the kitchen similar to an **API**, which acts as a middle man between a client and a server. The enefit: you can ask for food and you don’t have to know how to make it yourself. This way the restaurant can provide their services to anyone who knows how to speak the language. But while a customer may order in English or Mandarin, clients and servers use HTTP.
+
+## HTTP :P
+HTTP stands for Hy
+
 ```class ProfilePage extends React.Component { //making a copmponent and this is what will be shown on the localhost
     constructor(props) {
         super(props);
