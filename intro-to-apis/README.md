@@ -13,10 +13,10 @@ In this workshop, we will learn all about using Web APIs to integrate existing s
 
 ## Topics Covered
 - [APIs](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#what-is-an-api)
-- [Servers and Clients](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#what-even-is-a-server-or-a-client-and-how-do-they-interact)
+- [Servers and Clients](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#what-is-a-server-and-a-client-and-how-do-they-interact)
 - [HTTP](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#http)
 - [FullStack Example with Twitter API](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#quick-little-fullstack-example-with-twitterbot-api)
-- [Spotify Walkthrough]([https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-apis-walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-api-walkthrough))
+- [Spotify API Walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-apis-walkthrough](https://github.com/uclaacm/hothX-workshops/blob/main/intro-to-apis/README.md#spotify-api-walkthrough)
 
 ## What is an API?
 API stands for **A**plication **P**rogramming **I**nterface. This may sound complicated, but they really they just a way for two computers- a client and a server** to communicate. Some examples of APIs you may have encountered before are Venmo, Google Maps, and Twitterbots. Venmo payment is done through to ensure that the end application can only do what it needs to accomplish without being exposed to sensitive data or gaining access to unwelcome privileges. In this sense, APIs are kind of like a black box, or an object that produces useful information without revealing anything about its internal workings
